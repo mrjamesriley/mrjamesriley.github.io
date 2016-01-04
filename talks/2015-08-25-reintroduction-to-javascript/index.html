@@ -1,0 +1,505 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Re-introduction to Javascript</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <!-- additions for our own fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <link rel="stylesheet" href="custom/style.css" />
+
+    <!-- Printing and PDF exports -->
+    <script>
+var link = document.createElement( 'link' );
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+      <script src="lib/js/html5shiv.js"></script>
+      <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="reveal">
+
+      <!-- Any section element inside of this container is displayed as a slide -->
+      <div class="slides">
+
+        <section>
+          <h1>Where Rails meets the Front End</h1>
+          <p>(Re-)introducing Javascript from a Ruby perspective</p>
+          <img src="images/javascript.png" class="medium" />
+          <p>
+          <small>Created by <a href="http://hakim.se">James Riley</a> / <a href="http://twitter.com/mrjamesriley">@mrjamesriley</a></small>
+          </p>
+        </section>
+
+        <section>
+          <h1>James Riley</h1>
+
+          <div class="right-column">
+            <p>Portuguese speaking, guitar playing, cat loving.. uncle!</p>
+            <img src="images/uncle.jpg" style="height:300px" />
+          </div>
+
+          <div class="left-column">
+            <p>Full-stack developer at SupaDupa.me</p>
+            <img src="images/supadupa.png" />
+          </div>
+
+        </section>
+
+        <section>
+          <h1>The Gameplan</h1>
+          <div class="mtl">
+            <p>What is Javascript, how does it compare to Ruby?</p>
+          </div>
+        </section>
+
+
+        <section>
+          <h1>Javacsript</h1>
+          <img src="images/brenden.jpg" class="small" style="margin: 0" />
+          <video src="images/angry.m4v" autoplay="true" loop="true" class="small"></video>
+          <div class="mtl">
+            <p>Created in 10 days</p>
+            <p>Monopoly on the front end</p>
+            <p>Seen as a toy language, had quirks</p>
+          </div>
+        </section>
+
+        <section>
+          <h1>The bar has been raised...</h1>
+
+          <img src="images/websites-vs-apps.png" alt="websites vs apps" class="medium" />
+
+          <p>The use cases of Javascript have grown</p>
+        </section>
+
+        <section>
+          <h1>SupaDupa Pages</h1>
+          <img src="images/supadupa-pages.png" />
+        </section>
+
+        <section>
+          <h1>SupaDupa Products</h1>
+          <img src="images/supadupa-products.png" />
+        </section>
+
+        <section>
+          <h1>EcmaScript 6! (ES6)</h1>
+          <p>The latest version of Javascript</p>
+          <img src="images/es6.png" class="small" />
+          <img src="images/thumbsUp.gif" class="small" />
+          <div class="mtl">
+            <p>For Complex applications</p>
+            <p>To adopt defacto standards</p>
+          </div>
+        </section>
+
+        <section>
+          <h1>ES6 available today!</h1>
+
+          <p>Rails sprockets-es6 Gem</p>
+          <p>Try it out at BabelJS.io</p>
+
+          <br />
+
+          <p>Brower support will take years.</p>
+          <p>Yay for transpilers!</p>
+        </section>
+
+        <section>
+          <div class="left-column">
+            <p>Javascript basics</p>
+            <pre><code data-trim style="max-height: initial">
+// variables needs to be declared
+let partyHost  = 'James';
+
+// supports arithmetic and dates
+let guestCount = 10 + 5;
+let partyDate  = new Date(2015, 8, 25);
+
+
+// constants
+const MAX_GUESTS = 30;
+
+
+// conditionals
+if(guestCount >= MAX_GUESTS) {
+  console.log('No more guests allowed');
+}
+
+
+// arrays
+let buffet_food = ['Muffins', 'Biscuits'];
+
+
+// object
+let muffin = {
+  glutenFree: false,
+  flavour: 'Blueberry',
+  expiry: 2018
+}
+            </code></pre>
+          </div>
+
+          <div class="right-column">
+            <p>Ruby basics</p>
+            <pre><code data-trim class="ruby">
+# variables
+party_host  = 'James'
+
+# arithmetic and dates
+guest_count = 10 + 5;
+party_date  = Date.new(2015, 8, 25)
+
+
+# constants
+MAX_GUESTS = 30
+
+
+# conditionals
+if guest_count >= MAX_GUESTS
+  puts 'No more guests allowed'
+end
+
+
+# arrays
+buffet_food = ['Muffins', 'Biscuits']
+
+
+# hashes
+muffin = {
+  glutenFree: false,
+  flavour: 'Blueberry',
+  expiry: 2018
+}
+
+            </code></pre>
+            </div>
+
+            <div class="clearfix"></div>
+        </section>
+
+        <section>
+          <div class="left-column">
+            <b>more Javascript</b>
+            <pre><code>
+// loops
+for food in buffetFood {
+  console.log(`There shall be: ${food}`);
+}
+
+
+// functions
+function eat(foodName, foodList) {
+  if(foodList.indexOf(foodName) != -1) {
+    console.log(`Enjoy your ${foodName}`);
+  } else {
+    console.log(`Sorry, no more: ${foodName}`)
+  }
+}
+
+eat('Muffin', buffetFood) // Enjoy your Muffin
+
+
+// rest parameters
+function startParty(location, ...guests) {
+  console.log(`${guests.length} guests!`);
+}
+
+startParty('London', 'Alice', 'Bob');
+// 2 guests!
+          </pre></code>
+          </div>
+
+          <div class="right-column">
+            <b>more Ruby</b>
+            <pre><code>
+# loops
+for food in buffet_food do
+  puts "There shall be: #{food}"
+end
+
+
+# functions
+def eat(food_name, food_list)
+  if(food_list.index(food_name))
+    puts "Enjoy your #{food_name}"
+  else
+    puts "Sorry, no more: #{food_name}"
+  end
+end
+
+eat 'Muffin', buffet_food  # Enjoy your Muffin
+
+
+# splat operator
+def startParty(location, *guests)
+  puts "#{guests.length} guests!"
+end
+
+startParty('London', 'Alice', 'Bob')
+# 2 guests!
+          </pre></code>
+          </div>
+        </section>
+
+
+        <section>
+          <div class="left-column">
+          <p>Javacsript classes</p>
+          <pre><code>
+class Guest {
+
+ // constructor function with default options
+ constructor(options={}) {
+   this.firstName = options.firstName;
+   this.lastName  = options.lastName;
+ }
+
+ // method with string interpolation
+ introduce() {
+   console.log(`I am ${this.firstName}`);
+ }
+
+}
+
+var sam = new Guest({
+  firstName: 'Sam',
+  lastName: 'Phillips'
+});
+          </code></pre>
+          </div>
+
+          <div class="right-column">
+          <p>Ruby classes</p>
+          <pre><code class="ruby">
+class Guest
+
+  # constructor function with default options
+  def initialize(options={})
+    @first_name = options[:first_name]
+    @last_name  = options[:last_name]
+  end
+
+  # instance method with string interpolation
+  def introduce
+    "Hello, my name is: #{@first_name}"
+  end
+
+end
+
+sam = Guest.new({
+  first_name: 'Sam',
+  last_name: 'Phillips'
+});
+          </code></pre>
+          </div>
+
+
+        </section>
+
+
+
+
+        <section>
+          <div class="left-column">
+          <p>Javacsript inheritance</p>
+          <pre><code class="javascript">
+class Singer extends Guest {
+
+  constructor(options={}) {
+    super(options);
+    this.genre = options.genre;
+  }
+
+  sing() {
+    console.log('la la laaa');
+  }
+
+  static find_by_name(name) {
+    // retrieves singers matching the name given
+  }
+
+}
+
+var beyonce = new Singer({
+  firstName: 'Beyonce',
+  Lastname:  'Knowles',
+  genre: 'Pop'
+});
+          </code></pre>
+          </div>
+
+          <div class="right-column">
+          <p>Ruby inheritance</p>
+          <pre><code>
+class Singer < Guest
+
+  def initialize(options={})
+    super options
+    @genre = options[:genre]
+  end
+
+  def sing
+    puts 'la la laaa'
+  end
+
+  def self.find_by_name(name)
+    # retrieves singers matching the name given
+  end
+
+end
+
+beyonce = Singer.new({
+  first_name: 'Beyonce',
+  last_name:  'Knowles',
+  genre: 'Pop'
+});
+          </code></pre>
+          </div>
+
+
+        </section>
+
+        <section>
+          <img src="images/fascinating.gif" alt="fascinating" />
+          <h1>... so how do they differ?</h1>
+        </section>
+
+        <section>
+          <h1>Functions as a "first class object"</h1>
+          <pre><code>
+// assigning a function to a variable
+var dance = function() {
+  console.log('Shapes are being thrown');
+}
+
+
+// passing a function as an argument
+document.addEventListener('click', function() {
+  console.log('I have been clicked!');
+}):
+          </code></pre>
+<p>Makes JS suitable for Event based programming</p>
+        </section>
+
+        <section>
+          <h1>How else do they differ?</h1>
+
+          <p>Advanced features of do differ:
+          <ul>
+            <li>Ruby has Meta-programming</li>
+            <li>Javascript has Generators</li>
+          </ul>
+          <br />...but not essential</p>
+        </section>
+
+        <section>
+          <p>Bonus: Javascript makes you a Cross-app Developer!</p>
+          <div class="left-column">
+            <img src="images/enyo-logo.jpg" class="small" />
+            <br />
+            <img src="images/tv-developer.png" class="medium" />
+          </div>
+          <div class="right-column">
+            <img src="images/reactnative-logo.png" class="small" />
+            <br />
+            <img src="images/reactnative-facebook.jpg" class="tall" />
+          </div>
+        </section>
+
+        <section>
+          <h1>I WANT MORE!</h1>
+
+          <img src="images/kyle-simpson.png" class="small" style="margin: 0" />
+          <img src="images/code-school.png" class="small" style="margin: 0" />
+          <img src="images/eloquent.png" class="small" style="margin: 0" />
+          <p>People: Kyle Simpson</p>
+          <p>Books: Eloquent Javascript, Understanding EcmaScript 6</p>
+          <p>Websites: CodeSchool, CodeAcademy, <br />
+            Mozilla Developer Network</p>
+        </section>
+
+        <section>
+          <h1>Now go create something...</h1>
+          <video src="images/elmo.webm" alt="Elmo dancing" autoplay="true" loop="true"></video>
+          <p>Thank you for listening!</p>
+          <br />
+
+          <small>Created by James Riley
+            / <a href="http://twitter.com/mrjamesriley">@mrjamesriley</a></small>
+
+        </section>
+
+      </div>
+
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+
+// Full list of configuration options available at:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+  controls: true,
+  progress: true,
+  history: true,
+  center: true,
+
+  margin: 0.1,
+
+
+  transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+    // Optional reveal.js plugins
+  dependencies: [
+  { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+  { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+  { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+    { src: 'plugin/zoom-js/zoom.js', async: true },
+      { src: 'plugin/notes/notes.js', async: true }
+  ]
+});
+
+  // Google analytics tracking snippet
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-10271130-1', 'auto');
+  ga('send', 'pageview');
+    </script>
+
+  </body>
+</html>
+

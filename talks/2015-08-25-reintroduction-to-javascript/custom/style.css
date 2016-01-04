@@ -1,0 +1,63 @@
+.reveal h1 {
+  font-family: Lobster;
+  font-size: 60px;
+  text-transform: none;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+
+body {
+  font-family: Ubuntu;
+  text-transform: none;
+}
+
+video {
+  border: 1px solid black;
+}
+
+.reveal .mtl {
+  margin-top: 40px;
+}
+
+.reveal section img {
+  border: 1px solid black;
+}
+
+.reveal img.small, .reveal video.small {
+  border: 1px solid black;
+  max-height: 210px;
+}
+
+.reveal img.medium, .reveal video.medium {
+  max-height: 300px;
+}
+
+.reveal img.tall {
+  max-height: 400px;
+}
+
+.left-column, .right-column {
+  float: left;
+  width: 49%;
+}
+
+.reveal pre {
+  width: 98%;
+  font-size: 16px;
+}
+
+.reveal pre code {
+  max-height: initial;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.slides {
+  margin-top: 30px !important;
+}
+
+.reveal li {
+  margin-bottom: 20px;
+}
