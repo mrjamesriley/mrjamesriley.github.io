@@ -7,8 +7,12 @@ categories: learning-malayalam
 
 The ship is departing from the dock, rocking precariously as it stabilises itself upon the water. Basically the learning is underway!... and I'm pretty reassured by the resources available. I expressed desire to learn Malayalam a few months ago, and quickly abandoned the idea once it became apparent that the Malayalam language learners aren't treated to the same plentiful resources available to those learning French or Portuguese for example. Michael Thomas is yet to hit Indian shores. That said, I've had the following two books arrive today:
 
-* Learn Malayalam in Six Weeks by Lissy John & John Kannathu
-* Malayalam Dictionary and Phrasebook by Valhalla Menon
+- Learn Malayalam in Six Weeks by Lissy John & John Kannathu
+- Malayalam Dictionary and Phrasebook by Valhalla Menon
+
+
+![Learning Malayalam Books]({{ site.url }}/images/malayalam/learning-malayalam-books.jpg)
+
 
 Both of which were ordered at and promptly delivered by Amazon UK. Result. This, coupled with Anki, and the Mango languages course gives me a good few resources to work with for the moment. I'll elaborate a little on Anki in my next update, but it’s quickly becoming apparent that I'll benefit from the endless repetition till the vocabulary and phrases begin to take residence in my head.
 
