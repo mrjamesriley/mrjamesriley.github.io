@@ -3,6 +3,7 @@ layout: post
 title: "Day 6 - All Good Things"
 date: 2016-01-26 21:07:12
 categories: learning-malayalam
+comments: true
 ---
 
 All good things do not come to those who wait. They come to those who put work in. A busy weekend meant little in the way of study, but with the MangoLanguages Malayalam course saved offline on my phone for the morning commute, and with my trusty textbooks, the basics (the very basics) are coming together. The 'Learning Malaylam in Six Weeks' book dedicates two pages per day. This initially had me feeling like I'll run through it in no time, achieve fluency in mere hours, and start penning a novel with my newly obtained abilities. Turns out, it's two pages a day for good reason.

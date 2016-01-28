@@ -3,6 +3,7 @@ layout: post
 title: "Day 2 - Please Be Seated For Departure"
 date: 2016-01-22 18:20:20
 categories: learning-malayalam
+comments: true
 ---
 
 The ship is departing from the dock, rocking precariously as it stabilises itself upon the water. Basically the learning is underway!... and I'm pretty reassured by the resources available. I expressed desire to learn Malayalam a few months ago, and quickly abandoned the idea once it became apparent that the Malayalam language learners aren't treated to the same plentiful resources available to those learning French or Portuguese for example. Michael Thomas is yet to hit Indian shores. That said, I've had the following two books arrive today:

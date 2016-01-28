@@ -3,6 +3,7 @@ layout: post
 title: "Day 1 - The Malayalam Ambition"
 date: 2016-01-21 20:05:20
 categories: learning-malayalam
+comments: true
 ---
 
 I'm visiting the seemingly beautiful Indian state of Kerala in a few short months from now - and I've decided I'm going to have a go at learning the language, Malayalam, to the extent possible. Who can we lie to if not ourselves? I'm British, speak only English and some Portuguese - and the goal is to immerse myself, learn some conversational phrases, pick up the alphabet, and take the challenge of seeing what can be achieved with a deadline and a smattering of optimism.

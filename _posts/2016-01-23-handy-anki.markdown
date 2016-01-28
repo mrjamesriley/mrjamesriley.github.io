@@ -3,6 +3,7 @@ layout: post
 title: "Day 3 - Handy Anki"
 date: 2016-01-23 21:15:13
 categories: learning-malayalam
+comments: true
 ---
 
 Have told nearly everyone I come across of my plans to learn Malayalam - with many pulling the same expression that I remember seeing when telling people as a child that I have ambitions to grow up to be a robot. It's Day 3 and I'm getting a few basic phrases under my belt such as:
