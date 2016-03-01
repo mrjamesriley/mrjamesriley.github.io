@@ -445,12 +445,24 @@ $button-size: 1.5rem;
 	p > a,
 	li > a {
 		text-decoration: none;
-		color: #26C8DC;
-		&:visited { color: #26C8DC; }
+		color: #1AA2B3;
+		&:visited { color: #1AA2B3; }
 
 	}
 
 }
+
+ul.side-navigation {
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    padding-bottom: 3px;
+  }
+  a, a:visited {
+    color: #1AA2B3
+  }
+}
+
 
 /* Table of contents */
 .toc {
