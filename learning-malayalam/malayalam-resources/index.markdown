@@ -20,11 +20,11 @@ The book [Learn Malayalam in Six Weeks](http://www.amazon.co.uk/Learn-Basic-Mala
 
 This [Malayalam Dictionary and Phrasebook](http://www.amazon.co.uk/Dictionary-Phrasebook-Hippocrene-Phrasebooks/dp/0781811864/) by Valsala Menon is admittedly yet to provide much value to me, but is one I feel would grow in use over time. It's a well produced reference, and the best I've come across as far as a bilingual dictionary goes.
 
-#### Learn101.org - Malayalam
+#### Learn101.org - Malayalam
 
 The [Malayalam section of Learn101.org](http://learn101.org/malayalam.php).
 
-#### Anki
+#### Anki
 
 [Anki](http://ankisrs.net/) is THE language learning tool - simple as an idea, but invaluable in practice and the best known method of memorising information. In learning a language, there's an expected amount of grunt work, where there's no avoiding needing to learn a mass of vocabularly, and regularly practice phrases you've learnt.
 
