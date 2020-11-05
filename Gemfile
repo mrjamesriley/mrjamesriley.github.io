@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'jekyll'
+
+# blog-aware statis site generator
+gem 'jekyll', '~> 2'
 gem 'jekyll-sitemap'
-gem 'octopress', '~> 3.0.11'
+
+#  toolkit for writing and deploying Jekyll blogs
+gem 'octopress', '~> 3.0'
